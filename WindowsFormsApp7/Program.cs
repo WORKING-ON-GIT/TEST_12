@@ -5,6 +5,10 @@
 		[System.STAThread]
 		static void Main()
 		{
+			Person person = new Person();
+
+			person.Age = 20;
+
 			System.Windows.Forms.Application.EnableVisualStyles();
 			System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
 
