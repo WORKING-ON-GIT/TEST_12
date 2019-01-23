@@ -11,6 +11,12 @@
 			Form1 form = new Form1();
 
 			System.Windows.Forms.Application.Run(form);
+
+			if (form != null)
+			{
+				form.Dispose();
+				form = null;
+			}
 		}
 	}
 }
