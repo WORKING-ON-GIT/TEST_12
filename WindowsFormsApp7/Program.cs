@@ -14,7 +14,11 @@
 
 			if (form != null)
 			{
-				form.Dispose();
+				if (form.IsDisposed == false)
+				{
+					form.Dispose();
+				}
+
 				form = null;
 			}
 		}
